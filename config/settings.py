@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # local
-    "books.app.BooksConfig",
+    "books.apps.BooksConfig",
     "api.apps.ApiConfig",
     # 3rd party
     "rest_framework",
