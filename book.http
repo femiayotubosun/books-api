@@ -1,0 +1,35 @@
+POST http://127.0.0.1:8000/api/authors/
+Content-Type: application/json
+
+{
+    "name": "Brandon Sanderson"
+}
+
+
+### All Authors
+
+GET http://127.0.0.1:8000/api/authors/
+
+### Detail Author
+
+GET http://127.0.0.1:8000/api/authors/1/
+
+
+### 
+GET http://localhost:8000/api/
+
+###
+POST http://localhost:8000/api/
+Content-Type: application/json
+
+{
+    "title": "My first book",
+    "subtitle": "Rest APIs are fun",
+    "author":   {
+    "id": 1,
+    "name": "Brandon Sanderson"
+  },
+    "isbn": 1223
+
+
+}
