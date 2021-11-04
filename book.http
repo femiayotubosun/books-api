@@ -18,15 +18,17 @@ GET http://127.0.0.1:8000/api/authors/1/
 ### 
 GET http://localhost:8000/api/
 
+### 
+GET http://localhost:8000/api/2/
+
 ###
 POST http://localhost:8000/api/
 Content-Type: application/json
 
 {
-    "title": "My first book",
-    "subtitle": "Rest APIs are fun",
+    "title": "My firstdd book",
+    "subtitle": "Rest APIss are fun",
     "author":   {
-    "id": 1,
     "name": "Brandon Sanderson"
   },
     "isbn": 1223
