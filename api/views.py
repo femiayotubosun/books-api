@@ -11,10 +11,7 @@ class BaseBookAPIView(ABC):
 
 
 class BookListCreateAPIView(BaseBookAPIView, generics.ListCreateAPIView):
-    def perform_create(self, serializer):
-        print(serializer.validated_data["author"])
-        author = Author.objects.get(name=serializer.validated_data["author"]["name"])
-        serializer.save(author=author)
+    pass
 
 
 class BookDetailAPIView(BaseBookAPIView, generics.RetrieveUpdateDestroyAPIView):
