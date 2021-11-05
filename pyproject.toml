@@ -11,6 +11,8 @@ black = "^21.10b0"
 djangorestframework = "^3.12.4"
 django-cors-headers = "^3.10.0"
 coverage = "^6.1.1"
+PyYAML = "^6.0"
+uritemplate = "^4.1.1"
 
 [tool.poetry.dev-dependencies]
 

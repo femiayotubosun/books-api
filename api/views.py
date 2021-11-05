@@ -1,8 +1,20 @@
-from rest_framework import generics, serializers
+from rest_framework import generics
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework.reverse import reverse
 from books.models import Author, Book
 from api.serializers import AuthorSerializer, BookSerializer
 from abc import ABC
-from rest_framework.utils import json
+
+
+@api_view(["GET"])
+def api_root(request, format=None):
+    return Response(
+        {
+            "books": reverse("book-list", request=request, format=format),
+            "authors": reverse("author-list", request=request, format=format),
+        }
+    )
 
 
 class BaseBookAPIView(ABC):
